@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{%block content %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <form action="{% url 'login' %}" method="post" class="form-signin">
+          {% csrf_token %}
+          <label for="id_username" class="sr-only">Username</label>
+          <input type="text" id="id_username" maxlength="128" name="username" class="form-control" placeholder="Username" required autofocus>
+          <br>
+          <label for="id_password" class="sr-only">Password</label>
+          <input type="password" id="id_password" name="password" class="form-control" placeholder="Password" required>
+          <br>
+          <button class="btn btn-primary btn-submit" type="submit" value="login">Submit</button>
+          <input type="hidden" name="next" value="{{ next }}">
+            </form>
+          </div>
+          <div class="col-md-6">
+        <form action="{% url 'login' %}" method="post" class="form-signin">
+          {% csrf_token %}
+          
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}
