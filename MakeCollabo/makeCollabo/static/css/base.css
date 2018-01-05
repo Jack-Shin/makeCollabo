@@ -1,0 +1,19 @@
+.jumbotron {
+	background-color: #A3C5D1;
+	color: #464646;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+
+
+.jumbotron h2 {
+	font-size: 20px;
+	text-align: center;
+	color: #6878D9;
+}
+
+
+.glyphicon {
+	font-size: 50px;
+}
