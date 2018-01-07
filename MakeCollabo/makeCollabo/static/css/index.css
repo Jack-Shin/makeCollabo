@@ -19,26 +19,29 @@
 
 .devordes {
 	text-align: center;
-	height: 500px;
-	background-color: #9C72AF;
+	background-color: #343434;
 	color: #000000;
+	padding-bottom: 60px;
+}
+
+.desdev {
+	//background-color: #424242;
 }
 
 .dicon {
 	color: #FFFFFF;
-	font-size: 100px;
+	font-size: 150px;
 	margin-top: 50px;
 	margin-bottom: 20px;
 }
 
 .dtxt {
-	font-size: 19px;
+	font-size: 39px;
 	margin-bottom: 75px;
+	color: #FFFFFF;
 }
 
-.desdev {
-	background-color: #836ADC;
-}
+
 
 .text {
 	word-break:break-all;​
