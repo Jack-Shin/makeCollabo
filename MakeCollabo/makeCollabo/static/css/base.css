@@ -5,7 +5,17 @@
 	padding-bottom:20px;
 }
 
+.sign-margin {
+	margin-top: 12%;
+}
 
+.login-btn {
+	text-align: center;
+}
+
+.left-lbtn {
+	float: left;
+}
 
 .jumbotron h2 {
 	font-size: 20px;
@@ -15,5 +25,18 @@
 
 
 .glyphicon {
-	font-size: 50px;
+	font-size: 40px;
+}
+
+
+@media screen and (max-width: 620px) {
+	.main-text {
+		padding-top: 2%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+  .main-text {
+		padding-top: 2%;
+	}
 }
