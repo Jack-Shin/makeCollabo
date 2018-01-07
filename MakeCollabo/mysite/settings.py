@@ -25,7 +25,7 @@ SECRET_KEY = 'o=b5+q@f9#&ylnz(e=q_q^v^=+(y-0o^z5dq&dni=o#%_y!$dp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -114,6 +114,10 @@ USE_L10N = True
 
 USE_TZ = True
 
+
+#login setting
+
+LOGIN_REDIRECT_URL = '/'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
