@@ -1,34 +1,10 @@
-.jumbotron {
-	background-color: #A3C5D1;
-	color: #464646;
-	padding-top:20px;
-	padding-bottom:20px;
-}
-
 .sign-margin {
 	margin-top: 12%;
 }
 
-.login-btn {
-	text-align: center;
+.navbar {
+	margin-bottom: 0px;
 }
-
-.left-lbtn {
-	float: left;
-}
-
-.jumbotron h2 {
-	font-size: 20px;
-	text-align: center;
-	color: #6878D9;
-}
-
-
-.glyphicon {
-	font-size: 40px;
-}
-
-
 @media screen and (max-width: 620px) {
 	.main-text {
 		padding-top: 2%;

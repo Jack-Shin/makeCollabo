@@ -1,0 +1,45 @@
+.jumbotron {
+	background: url('../img/jumbotron.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	height: 1000px;
+	text-align: center;
+	background-size: cover;
+	margin-bottom:0px
+}
+
+.jumbotron h1 {
+	margin-top: 300px;
+}
+
+.jumbotron a {
+	margin-top: 150px;
+}
+
+.devordes {
+	text-align: center;
+	height: 500px;
+	background-color: #9C72AF;
+	color: #000000;
+}
+
+.dicon {
+	color: #FFFFFF;
+	font-size: 100px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.dtxt {
+	font-size: 19px;
+	margin-bottom: 75px;
+}
+
+.desdev {
+	background-color: #836ADC;
+}
+
+.text {
+	word-break:break-all;​
+}

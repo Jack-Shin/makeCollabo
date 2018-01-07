@@ -1,10 +1,142 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
+<!doctype html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}" />
+
+    <title>Make Collabo</title>
+  </head>
+  <body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">Make Collaboration</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#">WHO</a></li>
+            <li><a href="#">WHAT</a></li>
+            <li><a href="#">WHERE</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            {% if not user.is_authenticated %}
+            <li><a href="{% url 'login' %}">Sign in</a></li>
+            <li><a href="{% url 'signup' %}">Sign up</a></li>
+            {% else %}
+            <li><a href="{% url 'logout' %}">Log out</a></li>
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--<div class="container-fluid">-->
+    <div class="jumbotron">
+
+			<h1>MakeCollabo</h1>
+			<a class="btn btn-default btn-lg" href="#" role="button">Get Started</a>
+
+		</div>
 	
-</body>
+
+		<div class="container-fluid devordes">
+
+			<h1>I am..</h1>
+			<div class="row">
+			   <div class="col-md-6 desdev">
+			   	<span class="glyphicon glyphicon-cog dicon"></span><br>
+					<p class="dtxt">Developer</p>
+			   	<a class="btn btn-default btn-lg" href="#" role="button">Backend</a>
+			   </div>
+			   <div class="col-md-6 desdev">
+			   	<span class="	glyphicon glyphicon-leaf dicon"></span><br>
+			   	<p class="dtxt">Developer</p>
+			   	<a class="btn btn-default btn-lg" href="#" role="button">Designer</a>	  
+			  </div>
+		 	</div>
+		</div>
+		
+
+		<div>
+			<h1>Most started</h1>
+		</div>
+
+		<div>
+		  <div class="row">
+	    <div class="col-sm-4">
+	      <div class="panel panel-primary">
+	        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+	        <div class="panel-body text">
+	        	<h1>Title</h1>
+	        	<h3>maaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h3>
+	        </div>
+	        <div class="panel-footer"></div>
+	      </div>
+	    </div>
+	    <div class="col-sm-4"> 
+	      <div class="panel panel-danger">
+	        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+	        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+	        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+	      </div>
+	    </div>
+	    <div class="col-sm-4"> 
+	      <div class="panel panel-success">
+	        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+	        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+	        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+	      </div>
+	    </div>
+	  </div>
+		<br>
+
+	   
+	  <div class="row">
+	    <div class="col-sm-4">
+	      <div class="panel panel-primary">
+	        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+	        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+	        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+	      </div>
+	    </div>
+	    <div class="col-sm-4"> 
+	      <div class="panel panel-primary">
+	        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+	        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+	        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+	      </div>
+	    </div>
+	    <div class="col-sm-4"> 
+	      <div class="panel panel-primary">
+	        <div class="panel-heading">BLACK FRIDAY DEAL</div>
+	        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+	        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+	      </div>
+	    </div>
+	  </div>
+		<br><br>
+
+		  
+	 </div>
+    <!--</div>-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
 </html>
