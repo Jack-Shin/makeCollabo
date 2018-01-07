@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <div class="row sign-margin">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <!-- Login form -->
+      <div class="login-box">
+        <h1>Sign up</h1>
+        <br>
+        <form class="form-signin" action="{% url 'signup' %}" method="POST" autocomplete="off">
+          {% csrf_token %}
+          <input type="text" class="form-control" name="username" placeholder="Username" required autofocus>
+          <input type="text" class="form-control" name="email" placeholder="Email">
+          <input type="password" class="form-control" name="pw" placeholder="Password">
+          <input type="password" class="form-control" name="rpw" placeholder="Re-Password">
+          <br>
+          <input class="btn btn-primary btn-submit" type="submit" value="Sign up">
+        </form>
+      </div>
+      <!-- /Login form -->
+    </div>
+  </div>
+
+  
+{% endblock %}
