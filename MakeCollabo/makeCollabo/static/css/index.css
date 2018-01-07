@@ -17,16 +17,13 @@
 	margin-top: 150px;
 }
 
-.devordes {
+.devdes-back {
 	text-align: center;
-	background-color: #343434;
+	background-color:  #4A4A4A;
 	color: #000000;
 	padding-bottom: 60px;
 }
 
-.desdev {
-	//background-color: #424242;
-}
 
 .dicon {
 	color: #FFFFFF;
@@ -42,7 +39,10 @@
 }
 
 
-
 .text {
 	word-break:break-all;​
+}
+
+.most-star-bg {
+	background-color: #343434;
 }
