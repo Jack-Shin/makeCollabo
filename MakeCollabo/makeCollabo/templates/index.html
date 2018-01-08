@@ -23,7 +23,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
           </button>
-          <a class="navbar-brand" href="#">Make Collaboration</a>
+          <a class="navbar-brand" href="/">Make Collaboration</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
@@ -47,66 +47,88 @@
     <!--<div class="container-fluid">-->
     <div class="jumbotron">
 
-			<h1 style="color: #FFFFFF;">MakeCollabo</h1>
-			<a class="btn btn-default btn-lg" href="#" role="button">Get Started</a>
+      <h1 style="color: #FFFFFF;">MakeCollabo</h1>
+      <a class="btn btn-default btn-lg" href="#get-started" role="button"><span class="glyphicon glyphicon-send"></span>  Get Started</a>
 
-		</div>
-	
-		<div class="conatiner-fluid devdes-back">
-			<div class="container">
+    </div>
+  
+    <div id="get-started" class="conatiner-fluid devdes-back">
+      <div class="container">
 
-				<h1 style="color: #FFFFFF; font-size:45px;">I am..</h1>
-				<div class="row">
-				   <div class="col-md-6 desdev">
-				   	<span class="glyphicon glyphicon-cog dicon"></span><br>
-						<p class="dtxt">Developer</p>
-				   	<a class="btn btn-default btn-lg" href="#" role="button"><span class="glyphicon glyphicon-cog"></span>  Backend</a>
-				   </div>
-				   <div class="col-md-6 desdev">
-				   	<span class="glyphicon glyphicon-leaf dicon"></span><br>
-				   	<p class="dtxt">Developer</p>
-				   	<a class="btn btn-default btn-lg" href="#" role="button"><span class="glyphicon glyphicon-leaf"></span>  Designer</a>	  
-				  </div>
-			 	</div>
-			</div>
-		</div>
-		
-		
-		<div class="container-fluid most-star-bg">
-			<div>
-				<h1 style="color: #ffffff;">Most started</h1>
-			</div>
+        <h1 style="color: #FFFFFF; font-size:45px; margin-top: 50px;">I am..</h1>
+        <div class="row">
+           <div class="col-xs-6">
+            <span class="glyphicon glyphicon-cog dicon"></span><br>
+            <p class="dtxt">Developer</p>
+            <a class="btn btn-default btn-lg" href="#" role="button"><span class="glyphicon glyphicon-cog"></span>  Backend</a>
+           </div>
+           <div class="col-xs-6">
+            <span class="glyphicon glyphicon-leaf dicon"></span><br>
+            <p class="dtxt">Developer</p>
+            <a class="btn btn-default btn-lg" href="#" role="button"><span class="glyphicon glyphicon-leaf"></span>  Designer</a>   
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="container-fluid most-star-bg">
+      <div>
+        <h1 style="color: #ffffff;">Most started</h1>
+      </div>
 
-			<div>
-			  <div class="row">
-			  {% for i in "xxxxxx" %}	
-		    <div class="col-sm-6 col-md-6 col-lg-4">
-		      <div class="panel panel-warning">
-		        <div class="panel-heading"><h3 style="text-decoration: underline;">Lorem Ipsum</h3></div>
-		        <div class="panel-body text " style="padding: 10px; height: 350px; overflow: hidden;">
-		        	
-		        	<p style="font-size: 18px; padding-top: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam massa orci, rutrum id ex porttitor, cursus laoreet quam. Fusce nisi mauris, cursus vel elit quis, dapibus eleifend tortor. Praesent ultricies fermentum tortor. Cras nec nisi mollis, mattis eros et, venenatis est. Morbi sed odio dapibus, placerat quam et, tincidunt tellus. Phasellus ante nibh, pulvinar nec orci vitae, feugiat viverra est. Duis et lectus ultrices, consequat quam ac, consequat metus. Phasellus aliquet facilisis ante. Nam sit amet erat consequat, rutrum justo id, auctor odio. Integer vel consequat augue. Etiam luctus nibh dui, quis consequat elit dictum quis. Suspendisse sagittis ullamcorper congue.</p>
-		        </div>
-		        <div class="panel-footer">
-		        	<p>Lorem Ipsum  -  2017/01/07 23:04</p>
-		        </div>
-		      </div>
-		    </div>
-		    {% endfor %}
-		    
-			<br><br>
+      <div class="row">
+        {% for i in "xxxxxx" %} 
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="panel panel-warning">
+            <div class="panel-heading"><h3 style="text-decoration: underline;">Lorem Ipsum</h3></div>
+              <div class="panel-body text " style="padding: 10px; height: 350px; overflow: hidden;">
+                
+               <p style="font-size: 18px; padding-top: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam massa orci, rutrum id ex porttitor, cursus laoreet quam. Fusce nisi mauris, cursus vel elit quis, dapibus eleifend tortor. Praesent ultricies fermentum tortor. Cras nec nisi mollis, mattis eros et, venenatis est. Morbi sed odio dapibus, placerat quam et, tincidunt tellus. Phasellus ante nibh, pulvinar nec orci vitae, feugiat viverra est. Duis et lectus ultrices, consequat quam ac, consequat metus. Phasellus aliquet facilisis ante. Nam sit amet erat consequat, rutrum justo id, auctor odio. Integer vel consequat augue. Etiam luctus nibh dui, quis consequat elit dictum quis. Suspendisse sagittis ullamcorper congue.</p>
+              </div><!--panel-body-->
+            <div class="panel-footer"><p>Lorem Ipsum  -  2017/01/07 23:04</p></div>
+          </div><!--panel-->
+        </div> <!--col-->
+        {% endfor %}
+        <br><br>
+      </div><!-- row -->
+    </div><!--container-->
 
-			  
-		</div>
 
-		</div>
-
-		
-    <!--</div>-->
+   <!--
+  <div class="container-fluid text-center dev-info">
+    <br>
+    <div class="row">
+      <div class="col-xs-4 col-md-2">
+        <span class="glyphicon glyphicon-user iicon"></span>
+        <h5>Chris Yunbin Chang</h5>
+      </div>
+      <div class="col-xs-4 col-md-2">
+        <span class="glyphicon glyphicon-earphone iicon"></span>
+        <h5>+82 10-4107-3727</h5>
+      </div>
+      <div class="col-xs-4 col-md-2">
+        <span class="glyphicon glyphicon-envelope iicon"></span>
+        <h5>hw@yunbin.kr</h5>
+      </div>
+      <div class="col-xs-4 col-md-2">
+        <span class="glyphicon glyphicon-user iicon"></span>
+        <h5>Jack Shin</h5>
+      </div>
+      <div class="col-xs-4 col-md-2">
+        <span class="glyphicon glyphicon-earphone iicon"></span>
+        <h5>+82 10-5180-5733</h5>
+      </div>
+      <div class="col-xs-4 col-md-2">
+        <span class="glyphicon glyphicon-envelope iicon"></span>
+        <h5>jackshin57@gmail.com</h5>
+      </div>
+    </div>-->
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>
