@@ -4,7 +4,7 @@
 <div class="container-fluid">
   <br><br><br><br>
   <div class="row text-center">
-    <a href="{% url 'addpost' %}" class="btn btn-default btn-lg" role="button"><span class="glyphicon glyphicon-pencil"></span> Write New Post</a>
+    <a href="{% url 'addpost' %}" class="btn btn-success btn-lg" role="button"><span class="glyphicon glyphicon-pencil"></span> Write New Post</a>
   </div>
 </div>
 
@@ -14,13 +14,24 @@
     <br><br><br>
     {% for post in posts %} 
     <div class="col-sm-6 col-md-6 col-lg-4">
-      <div class="panel panel-warning">
-        <div class="panel-heading"><h3 style="font-size: 18px; text-decoration: underline; height: 30px; overflow: hidden; text-overflow: ellipsis;"><nobr>{{post.title}}</nobr></h3></div>
-        <div class="panel-body text " style="padding: 10px; height: 300px; overflow: hidden;">
+      <div class="panel panel-success">
+        <div class="panel-heading"><h3 class="panel-h3"><nobr>{{post.title}}</nobr></h3></div>
+        <div class="panel-body text " style="padding: 10px; height: 300px; overflow: hidden; ">
                   
-          <p style="font-size: 18px; padding-top: 25px;">{{post.text}}</p>
+          <p style="font-size: 18px; padding-top: 15px;">{{post.text}}</p>
         </div><!--panel-body-->
-        <div class="panel-footer"><p>{{post.author}}  -  {{post.created_date}}</p></div>
+        <div class="panel-footer">
+          <p style="font-size: 13px; margin-bottom: 0px;">FINDING WHO : 
+          {% if post.find_who == 'BO' %}
+          BOTH
+          {% elif post.find_who == 'BE' %}
+          BACK END
+          {% elif post.find_who == 'FE' %}
+          FRONT END
+          {% endif %}
+          </p>
+          <p style="font-size: 13px; margin-bottom: 0px;">{{post.author}} - {{post.created_date}}</p>
+        </div>
       </div><!--panel-->
     </div> <!--col-->
     {% endfor %}

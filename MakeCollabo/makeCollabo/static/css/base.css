@@ -6,6 +6,16 @@
 	margin-bottom: 0px;
 }
 
+.panel-h3 {
+	font-size: 18px;
+	text-decoration: underline;
+	height: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-top: 15px;
+	margin-bottom: 0px;
+}
+
 @media screen and (max-width: 620px) {
 	.main-text {
 		padding-top: 2%;
@@ -14,6 +24,7 @@
 	.sign-margin {
 		margin-top: 150px;
 	}
+	
 
 }
 
