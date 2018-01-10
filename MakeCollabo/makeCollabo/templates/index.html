@@ -27,9 +27,10 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li><a href="#">WHO</a></li>
-            <li><a href="#">WHAT</a></li>
-            <li><a href="#">WHERE</a></li>
+            <li><a href="/#get-started">WHO R U</a></li>
+            <li><a href="/#most-stared">MOST STARED</a></li>
+            <li><a href="{% url 'viewmore' %}">VIEW POSTS</a></li>
+            <li><a href="{% url 'about' %}">ABOUT</a></li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
@@ -59,22 +60,22 @@
         <div class="row">
            <div class="col-xs-6">
             <span class="glyphicon glyphicon-cog dicon"></span><br>
-            <p class="dtxt">Developer</p>
-            <a class="btn btn-default btn-lg" href="#" role="button"><span class="glyphicon glyphicon-cog"></span>  Backend</a>
+            <p class="dtxt">Back End</p>
+            <a class="btn btn-default btn-lg" href="#" role="button"><span class="glyphicon glyphicon-cog"></span> Developer</a>
            </div>
            <div class="col-xs-6">
             <span class="glyphicon glyphicon-leaf dicon"></span><br>
-            <p class="dtxt">Developer</p>
-            <a class="btn btn-default btn-lg" href="#" role="button"><span class="glyphicon glyphicon-leaf"></span>  Designer</a>   
+            <p class="dtxt">Front End</p>
+            <a class="btn btn-default btn-lg" href="#" role="button"><span class="glyphicon glyphicon-leaf"></span> Developer</a>   
           </div>
         </div>
       </div>
     </div>
     
     
-    <div class="container-fluid most-star-bg">
+    <div id="most-stared" class="container-fluid most-star-bg">
       <div>
-        <h1 style="color: #ffffff;">Most started</h1>
+        <h1 style="color: #ffffff; margin-top: 50px;">Most started</h1><br>
       </div>
 
       <div class="row">
@@ -82,7 +83,7 @@
         <div class="col-sm-6 col-md-6 col-lg-4">
           <div class="panel panel-warning">
             <div class="panel-heading"><h3 style="text-decoration: underline;">Lorem Ipsum</h3></div>
-              <div class="panel-body text " style="padding: 10px; height: 350px; overflow: hidden;">
+              <div class="panel-body text " style="padding: 10px; height: 300px; overflow: hidden;">
                 
                <p style="font-size: 18px; padding-top: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam massa orci, rutrum id ex porttitor, cursus laoreet quam. Fusce nisi mauris, cursus vel elit quis, dapibus eleifend tortor. Praesent ultricies fermentum tortor. Cras nec nisi mollis, mattis eros et, venenatis est. Morbi sed odio dapibus, placerat quam et, tincidunt tellus. Phasellus ante nibh, pulvinar nec orci vitae, feugiat viverra est. Duis et lectus ultrices, consequat quam ac, consequat metus. Phasellus aliquet facilisis ante. Nam sit amet erat consequat, rutrum justo id, auctor odio. Integer vel consequat augue. Etiam luctus nibh dui, quis consequat elit dictum quis. Suspendisse sagittis ullamcorper congue.</p>
               </div><!--panel-body-->
@@ -90,8 +91,11 @@
           </div><!--panel-->
         </div> <!--col-->
         {% endfor %}
-        <br><br>
       </div><!-- row -->
+
+      <div class="row text-center view-more">
+        <a href="{% url 'viewmore' %}">view more</a><br><br>
+      </div>
     </div><!--container-->
 
 

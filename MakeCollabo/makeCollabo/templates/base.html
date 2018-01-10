@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
 
@@ -26,9 +26,10 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li><a href="#">WHO</a></li>
-            <li><a href="#">WHAT</a></li>
-            <li><a href="#">WHERE</a></li>
+            <li><a href="/#get-started">WHO R U</a></li>
+            <li><a href="/#most-stared">MOST STARED</a></li>
+            <li><a href="{% url 'viewmore' %}">VIEW POSTS</a></li>
+            <li><a href="{% url 'about' %}">ABOUT</a></li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
@@ -44,13 +45,13 @@
     </nav>
 
     <!--<div class="container-fluid">-->
-      {% block content %}
-      {% endblock %}
+    {% block content %}
+    {% endblock %}
     <!--</div>-->
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>

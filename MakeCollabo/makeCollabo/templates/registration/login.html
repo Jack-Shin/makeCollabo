@@ -4,7 +4,7 @@
     <div class="row sign-margin">
     <div class="col-md-4"></div>
       <div class="col-md-4">
-        <h2>Log In</h2><br>
+        <h2>Sign In</h2><br>
 
         {% if form.errors %}
         <p class="error-text">Your username and password didn't match. Please try again.</p>
@@ -12,13 +12,12 @@
 
         <form action="{% url 'login' %}" method="post">
           {% csrf_token %}
-           <label for="id_username" class="sr-only">Username</label>
-           <input type="text" id="id_username" maxlength="128" name="username" class="form-control" placeholder="Username" required autofocus>
-           <br>
-           <input type="password" id="id_password" name="password" class="form-control" placeholder="Password" required>
-           <br>
-           <button class="btn btn-primary btn-submit" type="submit" value="login">Submit</button>
-           <input type="hidden" name="next" value="{{ next }}">
+          <input type="text" id="id_username" maxlength="128" name="username" class="form-control" placeholder="Username" required autofocus>
+          <br>
+          <input type="password" id="id_password" name="password" class="form-control" placeholder="Password" required>
+          <br>
+          <button class="btn btn-primary btn-submit" type="submit" value="login">Submit</button>
+          <input type="hidden" name="next" value="{{ next }}">
         </form>
       </div>
     </div>

@@ -24,6 +24,12 @@
 	padding-bottom: 60px;
 }
 
+.view-more a {
+	text-decoration: underline;
+	font-size: 25px;
+	color: #BCCA7A;
+}
+
 
 .dicon {
 	color: #FFFFFF;
