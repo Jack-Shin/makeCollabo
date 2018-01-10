@@ -11,10 +11,10 @@
         <br>
         <form class="form-signin" action="{% url 'signup' %}" method="POST" autocomplete="off">
           {% csrf_token %}
-          <input type="text" class="form-control" name="username" placeholder="Username" required autofocus>
-          <input type="text" class="form-control" name="email" placeholder="Email">
-          <input type="password" class="form-control" name="pw" placeholder="Password">
-          <input type="password" class="form-control" name="rpw" placeholder="Re-Password">
+          <input type="text" class="form-control" name="username" placeholder="Username" required autofocus><br>
+          <input type="text" class="form-control" name="email" placeholder="Email"><br>
+          <input type="password" class="form-control" name="pw" placeholder="Password"><br>
+          <input type="password" class="form-control" name="rpw" placeholder="Re-Password"><br>
           <br>
           <input class="btn btn-primary btn-submit" type="submit" value="Sign up">
         </form>

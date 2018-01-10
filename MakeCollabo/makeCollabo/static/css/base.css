@@ -1,18 +1,30 @@
 .sign-margin {
-	margin-top: 12%;
+	margin-top: 300px;
 }
 
 .navbar {
 	margin-bottom: 0px;
 }
+
 @media screen and (max-width: 620px) {
 	.main-text {
 		padding-top: 2%;
 	}
+
+	.sign-margin {
+		margin-top: 150px;
+	}
+
 }
 
 @media screen and (max-width: 480px) {
-  .main-text {
+    .main-text {
 		padding-top: 2%;
 	}
+
+	.sign-margin {
+		margin-top: 150px;
+	}
+
+
 }
