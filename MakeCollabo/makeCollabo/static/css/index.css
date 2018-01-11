@@ -3,7 +3,6 @@
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	//height: 1000px;
 	text-align: center;
 	background-size: cover;
 	margin-bottom:0px;
@@ -96,6 +95,14 @@
 		margin-bottom:0px;
 	}
 
+	.jumbotron h1 {
+		margin-top: 2300px;
+	}
+
+	.jumbotron a {
+		margin-top: 120px;
+	}
+
 	.iicon {
 		font-size: 30px;
 	}
@@ -130,6 +137,14 @@
 		text-align: center;
 		background-size: cover;
 		margin-bottom:0px;
+	}
+
+	.jumbotron h1 {
+		margin-top: 230px;
+	}
+
+	.jumbotron a {
+		margin-top: 120px;
 	}
 
 	.iicon {

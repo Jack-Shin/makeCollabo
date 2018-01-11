@@ -2,16 +2,16 @@
 
 {% block content %}
 <div class="container-fluid">
-  <br><br><br><br>
+  <br><br><br>
   <div class="row text-center">
-    <a href="{% url 'addpost' %}" class="btn btn-success btn-lg" role="button"><span class="glyphicon glyphicon-pencil"></span> Write New Post</a>
+    <a href="{% url 'addpost' %}" class="btn btn-success btn-lg" role="button" style="padding: 12px 30px 12px 30px"><span class="glyphicon glyphicon-pencil"></span> Write New Post</a>
   </div>
 </div>
 
 
 <div class="container">
   <div class="row">
-    <br><br><br>
+    <br>
     {% for post in posts %} 
     <div class="col-sm-6 col-md-6 col-lg-4">
       <div class="panel panel-success">
